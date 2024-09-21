@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hive_crud/home.dart';
+import 'package:hive_crud/sign_up.dart';
 import 'package:hive_flutter/adapters.dart';
 
 void main()async {
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Home(),
+      home: SignUp(),
     );
   }
 }

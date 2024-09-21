@@ -40,10 +40,6 @@ class _HomeState extends State<Home> {
 
   // Retrieve a single item from the database by using its key
   // Our app won't use this function but I put it here for your reference
-  Map<String, dynamic> _readItem(int key) {
-    final item = _shoppingBox.get(key);
-    return item;
-  }
 
   // Update a single item
   Future<void> _updateItem(int itemKey, Map<String, dynamic> item) async {
