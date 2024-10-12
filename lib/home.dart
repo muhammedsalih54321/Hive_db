@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:hive_flutter/adapters.dart';
+
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -91,15 +93,15 @@ class _HomeState extends State<Home> {
                 children: [
                   TextField(
                     controller: _nameController,
-                    decoration: const InputDecoration(hintText: 'Name'),
+                    decoration: const InputDecoration(hintText: 'Work'),
                   ),
                   const SizedBox(
                     height: 10,
                   ),
                   TextField(
                     controller: _quantityController,
-                    keyboardType: TextInputType.number,
-                    decoration: const InputDecoration(hintText: 'Quantity'),
+          
+                    decoration: const InputDecoration(hintText: 'Time'),
                   ),
                   const SizedBox(
                     height: 20,
@@ -142,7 +144,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Hive Crud'),
+        title: const Text('Hive Todo List'),
       ),
       body: _items.isEmpty
           ? const Center(
